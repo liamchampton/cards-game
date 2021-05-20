@@ -6,5 +6,8 @@ func main() {
 	// cards := []string{"Ace of Diamonds", newCard()}
 	cards := newDeck()
 
-	cards.print()
+	hand, remmainingCards := deal(cards, 5)
+
+	hand.print()
+	remmainingCards.print()
 }
