@@ -5,9 +5,6 @@ package main
 func main() {
 	// cards := []string{"Ace of Diamonds", newCard()}
 	cards := newDeck()
+	//cards.saveToFile("my-cards.txt")
 
-	hand, remmainingCards := deal(cards, 5)
-
-	hand.print()
-	remmainingCards.print()
 }
