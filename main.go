@@ -4,7 +4,7 @@ package main
 
 func main() {
 	// cards := []string{"Ace of Diamonds", newCard()}
-	cards := newDeck()
-	//cards.saveToFile("my-cards.txt")
+	cards := newDeckFromFile("my-cards.txt")
+	cards.print()
 
 }
