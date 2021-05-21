@@ -64,6 +64,7 @@ func newDeckFromFile(filename string) deck {
 }
 
 func (d deck) shuffle() {
+	// use time.Now() to generate a new random int64 for a seed
 	source := rand.NewSource(time.Now().UnixNano())
 	r := rand.New(source)
 
