@@ -4,7 +4,8 @@ package main
 
 func main() {
 	// cards := []string{"Ace of Diamonds", newCard()}
-	cards := newDeckFromFile("my-cards.txt")
+	cards := newDeck()
+	cards.shuffle()
 	cards.print()
 
 }
